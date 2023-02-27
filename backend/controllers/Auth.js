@@ -11,7 +11,7 @@ export const Register = async (req, res) => {
             nazwisko: nazwisko,
             email: email,
             password: hashPassword,
-            role: role
+            role: "user"
         });
         res.status(201).json({ msg: "Pomyślnie zarejestrowano użytkownika" });
     } catch (error) {
