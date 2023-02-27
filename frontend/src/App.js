@@ -1,58 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Users from "./pages/Users";
+import AddUser from "./pages/AddUser";
+import EditUser from "./pages/EditUser";
+import HomePage from "./pages/HomePage";
+import Contact from "./pages/Contact";
+import Register from "./components/Register";
+import Login from "./components/Login";
+import AddTasks from "./pages/AddTasks";
+import Tasks from "./pages/Tasks";
+import EditTasks from "./pages/EditTasks";
+import Uwagi from "./pages/Uwagi";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<HomePage />} />
+					<Route path="/zaloguj_sie" element={<Login />} />
+					<Route path="/zarejestruj_sie" element={<Register />} />
+					<Route path="/dashboard" element={<Dashboard />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/users" element={<Users />} />
+					<Route path="/users/add" element={<AddUser />} />
+					<Route path="/users/edit/:id" element={<EditUser />} />
+					<Route path="/tasks" element={<Tasks />} />
+					<Route path="/tasks/add" element={<AddTasks />} />
+					<Route path="/tasks/edit/:id" element={<EditTasks />} />
+					<Route path="/tasks/uwagi/:id" element={<Uwagi />} />
+				</Routes>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
