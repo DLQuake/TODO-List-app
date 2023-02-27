@@ -2,7 +2,7 @@
 
 A web application enabling the creation and management of a to-do list.
 
-## Spis treści
+## Table of Contents
  * [Brief repository description](#brief-repository-description)
  * [Technologies used in the project](#technologies-used-in-the-project)
  * [Application concept](#application-concept)
