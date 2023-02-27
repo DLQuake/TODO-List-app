@@ -36,6 +36,14 @@ The repository can be downloaded in two ways:
 - ### Creating the database
     The user needs to create a MySQL database. It is recommended to use the [XAMPP](https://www.apachefriends.org/) package for this purpose.
 
+- ### Creating .env file
+    In the project folder, create an .env file and then paste the following code
+
+    ```javascript
+    APP_PORT = 5000
+    SESSION_SECRET = 78564dhakjdhkahdkhawkdhkwahdkwah456dajlkdjlwaj
+    ```
+
 - ### Running the backend
     1. In the project folder, navigate to the backend folder
 
