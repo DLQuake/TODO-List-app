@@ -35,7 +35,7 @@ const Login = () => {
 							<div className="column is-4">
 								<form onSubmit={Auth} className="box">
 									{isError && <p className="has-text-centered">{message}</p>}
-									<h1 className="title is-2">Logowanie do systemu</h1>
+									<h1 className="title is-2">Login to the system</h1>
 									<div className="field">
 										<label className="label">E-mail</label>
 										<div className="control has-icons-left">
@@ -46,7 +46,7 @@ const Login = () => {
 										</div>
 									</div>
 									<div className="field">
-										<label className="label">Hasło</label>
+										<label className="label">Password</label>
 										<div className="control has-icons-left">
 											<input type="password" className="input" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="******" />
 											<span class="icon is-small is-left">
@@ -56,7 +56,7 @@ const Login = () => {
 									</div>
 									<div className="field mt-5">
 										<button type="submit" className="button is-link is-fullwidth" >
-											{isLoading ? "Loading..." : "Zaloguj się"}
+											{isLoading ? "Loading..." : "Sign in"}
 										</button>
 									</div>
 								</form>

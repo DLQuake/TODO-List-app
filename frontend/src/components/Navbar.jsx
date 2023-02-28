@@ -19,7 +19,7 @@ const Navbar = () => {
 			<nav className="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
 					<NavLink to="/dashboard" className="navbar-item">
-						Panel Główny
+						Dashboard
 					</NavLink>
 
 					<a href="#" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" >
@@ -36,7 +36,7 @@ const Navbar = () => {
 						</div>
 						<div className="navbar-item">
 							<div className="buttons">
-								<button onClick={logout} className="button is-light"> Wyloguj się </button>
+								<button onClick={logout} className="button is-light">Sign out</button>
 							</div>
 						</div>
 					</div>

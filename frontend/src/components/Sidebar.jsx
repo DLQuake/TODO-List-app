@@ -18,16 +18,16 @@ const Sidebar = () => {
 	return (
 		<div>
 			<aside className="menu pl-2 has-shadow">
-				<p className="menu-label">Główne</p>
+				<p className="menu-label">Main</p>
 				<ul className="menu-list">
 					<li>
 						<NavLink to={"/dashboard"}>
-							<IoHome /> Paneł główny
+							<IoHome /> Dashboard
 						</NavLink>
 					</li>
 					<li>
 						<NavLink to={"/tasks"}>
-							<IoLibrary /> Zadania
+							<IoLibrary /> Tasks
 						</NavLink>
 					</li>
 				</ul>
@@ -37,33 +37,33 @@ const Sidebar = () => {
 						<ul className="menu-list">
 							<li>
 								<NavLink to={"/users"}>
-									<IoPerson /> Użytkownicy
+									<IoPerson /> Users
 								</NavLink>
 							</li>
 						</ul>
 					</div>
 				)}
 				<div>
-					<p className="menu-label">Użytkownik</p>
+					<p className="menu-label">User</p>
 					<ul className="menu-list">
 						<li>
 							<NavLink to={"/tasks/add"}>
-								<IoAddCircle /> Dodaj nowe zadanie
+								<IoAddCircle /> Add new task
 							</NavLink>
 						</li>
 						<li>
 							<NavLink to={"/contact"}>
-								<IoMail /> Kontakt
+								<IoMail /> Contact
 							</NavLink>
 						</li>
 					</ul>
 				</div>
 
-				<p className="menu-label">Opcje</p>
+				<p className="menu-label">Option</p>
 				<ul className="menu-list">
 					<li>
 						<button onClick={logout} className="button is-white">
-							<IoLogOut /> Wyloguj się
+							<IoLogOut /> Sign out
 						</button>
 					</li>
 				</ul>

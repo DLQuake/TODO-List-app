@@ -22,19 +22,19 @@ const TaskList = () => {
 
 	return (
 		<div>
-			<h1 className="title">Lista Zadań</h1>
-			<Link to="/tasks/add" className="button is-info mb-2">Dodaj nowe Zadanie</Link>
+			<h1 className="title">Task list</h1>
+			<Link to="/tasks/add" className="button is-info mb-2">Add new task</Link>
 			<table className="table is-striped is-fullwidth">
 				<thead>
 					<tr>
 						<th>ID</th>
 						<th>Status</th>
-						<th>Nazwa zadania</th>
-						<th>Opis</th>
-						<th>Priorytet</th>
-						<th>Do kiedy wykonać</th>
-						<th>Stworzone przez</th>
-						<th>Opcje</th>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Priority</th>
+						<th>Due Data</th>
+						<th>Crated by</th>
+						<th>Options</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -49,8 +49,8 @@ const TaskList = () => {
 							<td>{tasks.user.email}</td>
 							<td>
 								<div className="Option">
-									<Link to={`/tasks/edit/${tasks.uuid}`} className="button is-small is-info">Edytuj</Link>
-									<button onClick={() => deleteTasks(tasks.uuid)} className="button is-small is-danger">Usuń</button>
+									<Link to={`/tasks/edit/${tasks.uuid}`} className="button is-small is-info">Edit</Link>
+									<button onClick={() => deleteTasks(tasks.uuid)} className="button is-small is-danger">Delete</button>
 								</div>
 							</td>
 						</tr>

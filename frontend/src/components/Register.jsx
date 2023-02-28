@@ -23,7 +23,7 @@ const Register = () => {
     }, [user, isSuccess, dispatch, navigate]);
 
     const Auth = (e) => {
-        alert("Pomyślnie zarejestrowano użytkownika");
+        alert("User successfully registered");
         e.preventDefault();
         dispatch(RegisterUser({ imie, nazwisko, email, password, confPassword, role }));
     };
@@ -38,36 +38,36 @@ const Register = () => {
                             <div className="column is-4">
                                 <form onSubmit={Auth} className="box">
                                     {isError && <p className="has-text-centered">{message}</p>}
-                                    <h1 className="title is-2">Rejestracja do systemu</h1>
+                                    <h1 className="title is-2">Registration to the system</h1>
                                     <div className="field">
-                                        <label className="label">Imię</label>
+                                        <label className="label">Name</label>
                                         <div className="control has-icons-left">
-                                            <input type="text" className="input" value={imie} onChange={(e) => setImie(e.target.value)} placeholder="Imię" />
+                                            <input type="text" className="input" value={imie} onChange={(e) => setImie(e.target.value)} placeholder="Name" />
                                             <span class="icon is-small is-left">
                                                 <i class="fa-solid fa-person"></i>
                                             </span>
                                         </div>
                                     </div>
                                     <div className="field">
-                                        <label className="label">Nazwisko</label>
+                                        <label className="label">Surname</label>
                                         <div className="control has-icons-left">
-                                            <input type="text" className="input" value={nazwisko} onChange={(e) => setNazwisko(e.target.value)} placeholder="Nazwisko" />
+                                            <input type="text" className="input" value={nazwisko} onChange={(e) => setNazwisko(e.target.value)} placeholder="Surname" />
                                             <span class="icon is-small is-left">
                                                 <i class="fa-solid fa-person"></i>
                                             </span>
                                         </div>
                                     </div>
                                     <div className="field">
-                                        <label className="label">Adres E-mail</label>
+                                        <label className="label">E-mail</label>
                                         <div className="control has-icons-left">
-                                            <input type="email" className="input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Adres E-mail" />
+                                            <input type="email" className="input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-mail" />
                                             <span class="icon is-small is-left">
                                                 <i class="fa-solid fa-envelope"></i>
                                             </span>
                                         </div>
                                     </div>
                                     <div className="field">
-                                        <label className="label">Hasło</label>
+                                        <label className="label">Password</label>
                                         <div className="control has-icons-left">
                                             <input type="password" className="input" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="******" />
                                             <span class="icon is-small is-left">
@@ -76,7 +76,7 @@ const Register = () => {
                                         </div>
                                     </div>
                                     <div className="field">
-                                        <label className="label">Powtórz Hasło</label>
+                                        <label className="label">Repeat password</label>
                                         <div className="control has-icons-left">
                                             <input type="password" className="input" value={confPassword} onChange={(e) => setConfPassword(e.target.value)} placeholder="******" />
                                             <span class="icon is-small is-left">
@@ -86,7 +86,7 @@ const Register = () => {
                                     </div>
                                     <div className="field mt-5">
                                         <button type="submit" className="button is-link is-fullwidth">
-                                            {isLoading ? "Loading..." : "Zarejestruj się"}
+                                            {isLoading ? "Loading..." : "Sign up"}
                                         </button>
                                     </div>
                                 </form>

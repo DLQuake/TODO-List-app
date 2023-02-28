@@ -21,18 +21,18 @@ const Userlist = () => {
 
 	return (
 		<div>
-			<h1 className="title">Użytkownicy</h1>
-			<h2 className="subtitle">Lista użytkowników</h2>
+			<h1 className="title">Users</h1>
+			<h2 className="subtitle">User list</h2>
 			{/* <Link to="/users/add" className="button is-primary mb-2">Dodaj nowego użytkownika</Link> */}
 			<table className="table is-striped is-fullwidth">
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>Imię</th>
-						<th>Nazwisko</th>
+						<th>Name</th>
+						<th>Surname</th>
 						<th>Email</th>
-						<th>Rola</th>
-						<th>Opcje</th>
+						<th>Role</th>
+						<th>Options</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -44,8 +44,8 @@ const Userlist = () => {
 							<td>{user.email}</td>
 							<td>{user.role}</td>
 							<td>
-								<Link to={`/users/edit/${user.uuid}`} className="button is-small is-info">Edytuj</Link>
-								<button onClick={() => deleteUser(user.uuid)} className="button is-small is-danger">Usuń</button>
+								<Link to={`/users/edit/${user.uuid}`} className="button is-small is-info">Edit</Link>
+								<button onClick={() => deleteUser(user.uuid)} className="button is-small is-danger">Delete</button>
 							</td>
 						</tr>
 					))}

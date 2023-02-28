@@ -50,42 +50,42 @@ const FormEditUser = () => {
 	};
 	return (
 		<div>
-			<h1 className="title">Użytkownicy</h1>
-			<h2 className="subtitle">Zaktualizuj dane użytkownika</h2>
+			<h1 className="title">Users</h1>
+			<h2 className="subtitle">Update user details</h2>
 			<div className="card is-shadowless">
 				<div className="card-content">
 					<div className="content">
 						<form onSubmit={updateUser}>
 							<p className="has-text-centered">{msg}</p>
 							<div className="field">
-								<label className="label">Imię</label>
+								<label className="label">Name</label>
 								<div className="control has-icons-left">
-									<input type="text" className="input" value={imie} onChange={(e) => setImie(e.target.value)} placeholder="Imie" />
+									<input type="text" className="input" value={imie} onChange={(e) => setImie(e.target.value)} placeholder="Name" />
 									<span class="icon is-small is-left">
 										<i class="fa-solid fa-person"></i>
 									</span>
 								</div>
 							</div>
 							<div className="field">
-								<label className="label">Nazwisko</label>
+								<label className="label">Surname</label>
 								<div className="control has-icons-left">
-									<input type="text" className="input" value={nazwisko} onChange={(e) => setNazwisko(e.target.value)} placeholder="Nazwisko" />
+									<input type="text" className="input" value={nazwisko} onChange={(e) => setNazwisko(e.target.value)} placeholder="Surname" />
 									<span class="icon is-small is-left">
 										<i class="fa-solid fa-person"></i>
 									</span>
 								</div>
 							</div>
 							<div className="field">
-								<label className="label">Email</label>
+								<label className="label">E-mail</label>
 								<div className="control has-icons-left">
-									<input type="email" className="input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
+									<input type="email" className="input" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="E-mail" />
 									<span class="icon is-small is-left">
 										<i class="fa-solid fa-envelope"></i>
 									</span>
 								</div>
 							</div>
 							<div className="field">
-								<label className="label">Hasło</label>
+								<label className="label">Password</label>
 								<div className="control has-icons-left">
 									<input type="password" className="input" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="******" />
 									<span class="icon is-small is-left">
@@ -94,7 +94,7 @@ const FormEditUser = () => {
 								</div>
 							</div>
 							<div className="field">
-								<label className="label">Potwierdź hasło</label>
+								<label className="label">Confirm password</label>
 								<div className="control has-icons-left">
 									<input type="password" className="input" value={confPassword} onChange={(e) => setConfPassword(e.target.value)} placeholder="******" />
 									<span class="icon is-small is-left">
@@ -103,11 +103,11 @@ const FormEditUser = () => {
 								</div>
 							</div>
 							<div className="field">
-								<label className="label">Rola</label>
+								<label className="label">Role</label>
 								<div className="control has-icons-left">
 									<div className="select is-fullwidth">
 										<select value={role} onChange={(e) => setRole(e.target.value)} >
-											<option>Wybierz Role</option>
+											<option>Choose role</option>
 											<option value="admin">Admin</option>
 											<option value="user">User</option>
 										</select>
@@ -119,7 +119,7 @@ const FormEditUser = () => {
 							</div>
 							<div className="field">
 								<div className="control">
-									<button type="submit" className="button is-link">Zaktualizuj zmiany</button>
+									<button type="submit" className="button is-link">Update</button>
 								</div>
 							</div>
 						</form>

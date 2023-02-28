@@ -9,19 +9,19 @@ const Welcome = () => {
 				<div className="container">
 					<div className="column is-10">
 						<div className="box">
-							<h1 className="title has-text-centered">Panel Główny</h1>
+							<h1 className="title has-text-centered">Dashboard</h1>
 							<h2 className="subtitle has-text-centered">
-								Witaj użytkowniku <strong>{user && user.imie} {user && user.nazwisko}</strong>
+								Hello user <strong>{user && user.imie} {user && user.nazwisko}</strong>
 								<br />
-								Rola użytkownika: {user && user.role}
+								User role: {user && user.role}
 							</h2>
 
 							<div className="content">
-								<p>Po zalogowaniu się do panelu głównego aplikacji TODO, będziesz mieć dostęp do pełnej listy swoich zadań. Na stronie głównej zobaczysz listę wszystkich zadań, które utworzyłeś, wraz z ich tytułami, terminami wykonania i priorytetami.</p>
-								<p>Możesz łatwo zarządzać swoimi zadaniami, dodawać nowe, modyfikować już istniejące lub usuwać nieaktualne zadania. Wszystkie te opcje znajdziesz w intuicyjnym panelu nawigacyjnym.</p>
-								<p>Panel nawigacyjny umożliwia również filtrowanie zadań według priorytetów, terminów wykonania oraz kategorii. To pozwoli Ci na szybsze znalezienie najważniejszych zadań i skupienie się na ich realizacji.</p>
-								<p>W aplikacji TODO znajdziesz również opcję dodawania notatek do swoich zadań oraz możliwość oznaczania zadań jako ukończone, co pozwoli Ci śledzić postępy w realizacji swoich zadań.</p>
-								<p>Jeśli szukasz prostego i skutecznego narzędzia do organizacji i zarządzania swoimi zadaniami, aplikacja TODO jest idealnym rozwiązaniem dla Ciebie. Zaloguj się już dziś i zacznij skuteczniej zarządzać swoim czasem i zadaniami.</p>
+								<p>After logging in to the main panel of the TODO application, you will have access to the full list of your tasks. On the home page, you'll see a list of all the tasks you've created, along with their titles, due dates, and priorities.</p>
+								<p>You can easily manage your tasks, add new ones, modify existing ones or delete obsolete tasks. You will find all these options in an intuitive navigation panel.</p>
+								<p>The navigation panel also allows you to filter tasks by priority, due date and category. This will allow you to find the most important tasks faster and focus on their implementation.</p>
+								<p>In the TODO app, you will also find the option to add notes to your tasks and the ability to mark tasks as completed, which will allow you to track the progress of your tasks.</p>
+								<p>If you are looking for a simple and effective tool to organize and manage your tasks, the TODO application is the perfect solution for you. Sign in today and start managing your time and tasks more effectively.</p>
 							</div>
 
 						</div>

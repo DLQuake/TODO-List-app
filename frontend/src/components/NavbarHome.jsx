@@ -22,14 +22,14 @@ const NavbarHome = () => {
 
             <div id="navbarBasicExample" className={`navbar-menu ${burgerActive ? "is-active" : ""}`}>
                 <div class="navbar-start">
-                    <Link to="/" class="navbar-item">Strona główna</Link>
+                    <Link to="/" class="navbar-item">Home Page</Link>
                 </div>
 
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <Link to="/zarejestruj_sie" class="button is-link"><strong>Zarejestruj sie</strong></Link>
-                            <Link to="/zaloguj_sie" class="button is-light">Zaloguj sie</Link>
+                            <Link to="/register" class="button is-link"><strong>Register</strong></Link>
+                            <Link to="/login" class="button is-light">Login</Link>
                         </div>
                     </div>
                 </div>
